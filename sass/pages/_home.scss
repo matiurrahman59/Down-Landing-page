@@ -6,6 +6,20 @@
   align-items: center;
   gap: 10rem;
 
+  &-img {
+    position: relative;
+    &:before {
+      content: url(../../img/Dark-Gradient-1.png);
+      position: absolute;
+      width: 75.2rem;
+      height: 75.2rem;
+      left: -48.8rem;
+      top: -9.2rem;
+      filter: blur(5rem);
+      z-index: -1;
+    }
+  }
+
   &-text {
     display: flex;
     flex-direction: column;
@@ -20,6 +34,7 @@
 
   .paragraph {
     font-size: 1.6rem;
+    color: var(--color-grey-light-1);
     line-height: 2.8rem;
     width: 40.5rem;
   }
